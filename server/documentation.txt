@@ -1,0 +1,23 @@
+To signup:
+post a request to the url :
+http://localhost:3000/api/register
+with body in which parameters are
+{"fullname":"" ,"email":"","password":""}
+
+To login:
+post a request to url:
+http://localhost:3000/api/login
+with body in which parameters are
+{"email":"","password":""}
+
+To get otp link when forgot password:
+post a request to url:
+http://localhost:3000/api/forgot_password
+with body in which parameters are
+{"email":""}
+
+Open the otp link to reset password:
+get a request to url:
+http://localhost:3000/api/reset_password?token="******"
+with body in which parameters are
+{"newPassword":"","verifyPassword":""}
